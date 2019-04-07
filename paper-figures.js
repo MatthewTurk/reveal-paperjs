@@ -77,9 +77,7 @@ var PaperFigures = ( function( Reveal ){
             disablePaper(event.previousSlide);
             enablePaper(event.currentSlide);
         });
-        Reveal.addEventListener( 'ready', function(event) {
-            enablePaper(event.currentSlide);
-        });
+        enablePaper(Reveal.getCurrentSlide());
     });
 
 })( Reveal );
